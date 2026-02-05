@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { HashRouter, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
-import { Book, User, UserRole, BorrowRecord } from './types';
-import { INITIAL_BOOKS, MOCK_STUDENT, MOCK_LIBRARIAN } from './constants';
-import { ThemeToggle } from './components/ThemeToggle';
-import { BookCard } from './components/BookCard';
-import { EBookReader } from './components/EBookReader';
-import { getBookEnrichment } from './services/geminiService';
+import { Book, User, UserRole, BorrowRecord } from './types.ts';
+import { INITIAL_BOOKS, MOCK_STUDENT, MOCK_LIBRARIAN } from './constants.ts';
+import { ThemeToggle } from './components/ThemeToggle.tsx';
+import { BookCard } from './components/BookCard.tsx';
+import { EBookReader } from './components/EBookReader.tsx';
+import { getBookEnrichment } from './services/geminiService.ts';
 
 // --- Shared Layout Component ---
 const Layout: React.FC<{ 
